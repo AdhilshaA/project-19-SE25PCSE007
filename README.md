@@ -27,6 +27,7 @@
 - [Ablation Studies and Training Times](#ablation-studies-and-training-times)
 - [Conclusions and Future Work](#conclusions-and-future-work)
 - [References](#references)
+- [Some failure modes](#some-failure-modes)
 
 ## setting up the environment 
 
@@ -233,3 +234,8 @@ Future work will focus on incorporating noise-based augmentations during the tra
 [11] Christopher Yeung, Ryan Tsai, Benjamin Pham, Brian King, Yoshiaki Kawagoe, David Ho, Julia Liang, Mark W. Knight, and Aaswath P. Raman. Global inverse design across multiple photonic structure classes using generative deep learning. Advanced Optical Materials, 9(20):2100548, 2021.
 [12] Nanfang Yu and Federico Capasso. Flat optics with designer metasurfaces. Nature Materials, 13(2):139–150, 2014.
 [13] Zezhou Zhang, Chuanchuan Yang, Yifeng Qin, Zhihai Zheng, Jiqiang Feng, and Hongbin Li. Addressing high-performance data sparsity in metasurface inverse design using multi-objective optimization and diffusion probabilistic models. Opt. Express, 32(23):40869–40885, Nov 2024. 5
+
+
+## Some failure modes
+
+![Failure Modes](./results/main_figures/failure.png)
