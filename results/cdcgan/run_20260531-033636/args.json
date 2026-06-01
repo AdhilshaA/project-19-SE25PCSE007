@@ -1,0 +1,15 @@
+{
+  "img_dir": "data/Images",
+  "spectra_csv": "data/absorptionData_HybridGAN.csv",
+  "output_dir": "results/cdcgan",
+  "run_dir": "results/cdcgan/run_20260531-033636",
+  "n_epochs": 100,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "ngf": 128,
+  "ndf": 64,
+  "img_size": 64,
+  "n_spectrum_points": 800,
+  "latent_dim": 400,
+  "manual_seed": 999
+}

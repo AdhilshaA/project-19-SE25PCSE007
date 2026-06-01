@@ -1,0 +1,19 @@
+{
+  "img_dir": "data/Images",
+  "spectra_csv": "data/absorptionData_HybridGAN.csv",
+  "output_dir": "results/design_autoencoder_vae",
+  "run_dir": "results/design_autoencoder_vae/run_20260531-022427",
+  "n_epochs": 40,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "manual_seed": 999,
+  "device": "cuda",
+  "img_size": 64,
+  "latent_channels": 1,
+  "latent_size": 16,
+  "hidden_dim": 64,
+  "use_vae": true,
+  "beta": 1.0,
+  "kl_warmup_epochs": 5,
+  "use_amp": false
+}

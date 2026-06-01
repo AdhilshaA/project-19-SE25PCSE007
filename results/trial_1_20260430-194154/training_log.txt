@@ -1,0 +1,46 @@
+Trial Name: trial_1_20260430-194154
+Experiment Settings:
+Trial Name: trial_1
+Manual Seed: 12345
+Batch Size: 16
+Image Size: 64
+Latent Vector Size: 400
+Generator Feature Map Size: 128
+Discriminator Feature Map Size: 64
+Number of Epochs: 5
+Learning Rate: 0.0001
+Beta1: 0.5
+Number of GPUs: 1
+Verbose Every N Batches: 1
+Break After N Batches: 5
+Save Model Every N Epochs: 5
+Save Images Every N Iters: 1
+
+Start Time = Thu Apr 30 19:41:54 2026
+[1/5][1/5]	Loss_D: 1.7394	Loss_G: 22.0647	D(x): 0.8295	D(G(z)): 0.7224 / 0.0000
+[1/5][2/5]	Loss_D: 73.4050	Loss_G: 1.5148	D(x): 0.9653	D(G(z)): 1.0000 / 0.6685
+[1/5][3/5]	Loss_D: 101.2906	Loss_G: 3.3680	D(x): 0.3552	D(G(z)): 1.0000 / 1.0000
+[1/5][4/5]	Loss_D: 102.3890	Loss_G: 5.5273	D(x): 1.0000	D(G(z)): 1.0000 / 1.0000
+[1/5][5/5]	Loss_D: 34.9707	Loss_G: 6.7332	D(x): 1.0000	D(G(z)): 1.0000 / 0.0330
+[2/5][1/5]	Loss_D: 105.8338	Loss_G: 1.9878	D(x): 1.0000	D(G(z)): 1.0000 / 1.0000
+[2/5][2/5]	Loss_D: 95.2833	Loss_G: 0.6399	D(x): 1.0000	D(G(z)): 1.0000 / 0.9978
+[2/5][3/5]	Loss_D: 20.8748	Loss_G: 9.9941	D(x): 1.0000	D(G(z)): 1.0000 / 0.0000
+[2/5][4/5]	Loss_D: 72.6201	Loss_G: 2.5432	D(x): 1.0000	D(G(z)): 1.0000 / 0.1406
+[2/5][5/5]	Loss_D: 40.3053	Loss_G: 12.6208	D(x): 0.9875	D(G(z)): 0.9999 / 0.0002
+[3/5][1/5]	Loss_D: 44.1036	Loss_G: 13.2312	D(x): 0.9774	D(G(z)): 0.9993 / 0.0013
+[3/5][2/5]	Loss_D: 30.2690	Loss_G: 13.5437	D(x): 0.8136	D(G(z)): 1.0000 / 0.0000
+[3/5][3/5]	Loss_D: 11.2289	Loss_G: 20.7903	D(x): 0.9971	D(G(z)): 0.9999 / 0.0000
+[3/5][4/5]	Loss_D: 12.2041	Loss_G: 20.3172	D(x): 0.0013	D(G(z)): 0.7988 / 0.0000
+[3/5][5/5]	Loss_D: 5.2906	Loss_G: 11.9900	D(x): 0.1632	D(G(z)): 0.0026 / 0.0001
+[4/5][1/5]	Loss_D: 44.1216	Loss_G: 6.8564	D(x): 1.0000	D(G(z)): 0.9992 / 0.2204
+[4/5][2/5]	Loss_D: 89.8310	Loss_G: 0.6994	D(x): 1.0000	D(G(z)): 1.0000 / 0.8377
+[4/5][3/5]	Loss_D: 105.8338	Loss_G: 0.7583	D(x): 1.0000	D(G(z)): 1.0000 / 1.0000
+[4/5][4/5]	Loss_D: 79.4792	Loss_G: 0.2751	D(x): 1.0000	D(G(z)): 1.0000 / 0.9303
+[4/5][5/5]	Loss_D: 8.1535	Loss_G: 25.1895	D(x): 1.0000	D(G(z)): 0.7458 / 0.0000
+[5/5][1/5]	Loss_D: 4.2673	Loss_G: 24.7891	D(x): 1.0000	D(G(z)): 0.0001 / 0.0000
+[5/5][2/5]	Loss_D: 2.9829	Loss_G: 14.6494	D(x): 1.0000	D(G(z)): 0.0023 / 0.0000
+[5/5][3/5]	Loss_D: 8.3375	Loss_G: 22.2196	D(x): 1.0000	D(G(z)): 0.9960 / 0.0000
+[5/5][4/5]	Loss_D: 5.4490	Loss_G: 5.5828	D(x): 0.0549	D(G(z)): 0.0115 / 0.0043
+[5/5][5/5]	Loss_D: 3.3007	Loss_G: 16.9643	D(x): 0.9962	D(G(z)): 0.6613 / 0.0000
+End Time = Thu Apr 30 19:43:29 2026
+Total Time Lapsed = 0.026414988504515752 Hours

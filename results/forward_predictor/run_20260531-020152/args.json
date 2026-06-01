@@ -1,0 +1,14 @@
+{
+  "img_dir": "data/Images",
+  "spectra_csv": "data/absorptionData_HybridGAN.csv",
+  "output_dir": "results/forward_predictor",
+  "run_dir": "results/forward_predictor/run_20260531-020152",
+  "n_epochs": 25,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "hidden_dim": 64,
+  "manual_seed": 999,
+  "device": "cuda",
+  "img_size": 64,
+  "n_spectrum_points": 800
+}

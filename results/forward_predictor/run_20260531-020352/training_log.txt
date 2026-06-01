@@ -1,0 +1,31 @@
+Epoch 1/25 | Loss: 0.010356 | Time: 18.1s
+Epoch 2/25 | Loss: 0.005641 | Time: 36.3s
+Epoch 3/25 | Loss: 0.004484 | Time: 54.0s
+Epoch 4/25 | Loss: 0.003845 | Time: 71.1s
+Epoch 5/25 | Loss: 0.003409 | Time: 91.2s
+Epoch 6/25 | Loss: 0.003089 | Time: 113.2s
+Epoch 7/25 | Loss: 0.002774 | Time: 130.0s
+Epoch 8/25 | Loss: 0.002566 | Time: 146.7s
+Epoch 9/25 | Loss: 0.002375 | Time: 163.2s
+Epoch 10/25 | Loss: 0.002230 | Time: 179.7s
+Epoch 11/25 | Loss: 0.002095 | Time: 196.4s
+Epoch 12/25 | Loss: 0.002004 | Time: 212.8s
+Epoch 13/25 | Loss: 0.001897 | Time: 229.2s
+Epoch 14/25 | Loss: 0.001803 | Time: 245.7s
+Epoch 15/25 | Loss: 0.001775 | Time: 261.9s
+Epoch 16/25 | Loss: 0.001722 | Time: 278.3s
+Epoch 17/25 | Loss: 0.001628 | Time: 295.0s
+Epoch 18/25 | Loss: 0.001586 | Time: 311.6s
+Epoch 19/25 | Loss: 0.001524 | Time: 328.3s
+Epoch 20/25 | Loss: 0.001481 | Time: 344.8s
+Epoch 21/25 | Loss: 0.001414 | Time: 361.3s
+Epoch 22/25 | Loss: 0.001390 | Time: 377.9s
+Epoch 23/25 | Loss: 0.001338 | Time: 394.3s
+Epoch 24/25 | Loss: 0.001315 | Time: 409.3s
+Epoch 25/25 | Loss: 0.001274 | Time: 424.5s
+
+Validation Metrics:
+  MSE: 0.000826
+  MAE: 0.012840
+  Max Error: 0.692171
+  Correlation: 0.977204

@@ -1,0 +1,22 @@
+Run args written to results/latent_diffusion_det/run_20260531-023907/args.json
+EMA enabled: True, decay: 0.9999, warmup_steps: 0
+Epoch 1/20 | Loss: 1.004542 | Time: 72.1s
+Epoch 2/20 | Loss: 1.001064 | Time: 144.7s
+Epoch 3/20 | Loss: 1.000521 | Time: 215.3s
+Epoch 4/20 | Loss: 1.001351 | Time: 286.0s
+Epoch 5/20 | Loss: 1.000378 | Time: 356.7s
+Epoch 6/20 | Loss: 1.001357 | Time: 426.8s
+Epoch 7/20 | Loss: 0.999209 | Time: 494.8s
+Epoch 8/20 | Loss: 1.000682 | Time: 565.2s
+Epoch 9/20 | Loss: 1.001092 | Time: 635.6s
+Epoch 10/20 | Loss: 1.000875 | Time: 706.1s
+Epoch 11/20 | Loss: 0.999969 | Time: 777.7s
+Epoch 12/20 | Loss: 1.000102 | Time: 849.1s
+Epoch 13/20 | Loss: 1.001300 | Time: 920.2s
+Epoch 14/20 | Loss: 1.000166 | Time: 991.9s
+Epoch 15/20 | Loss: 1.001166 | Time: 1067.0s
+Epoch 16/20 | Loss: 1.000191 | Time: 1141.7s
+Epoch 17/20 | Loss: 0.999914 | Time: 1216.7s
+Epoch 18/20 | Loss: 0.999770 | Time: 1291.6s
+Epoch 19/20 | Loss: 1.000110 | Time: 1366.7s
+Epoch 20/20 | Loss: 1.000300 | Time: 1441.7s
