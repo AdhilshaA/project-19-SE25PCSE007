@@ -4,7 +4,7 @@
     <p>Date: 01 June 2026</p>
 </center>
 
-<center> [<a href="./report.pdf" download>DOWNLOAD REPORT</a>] [<a href="./data/absorptionData_HybridGAN.csv" download>DOWNLOAD ABSORPTION DATA</a>] [<a href="./data/Images.zip" download>DOWNLOAD IMAGES</a>] </center>
+<center> [<a href="./report.pdf" download>DOWNLOAD REPORT</a>]<br>[<a href="./data/absorptionData_HybridGAN.csv" download>DOWNLOAD ABSORPTION DATA</a>]<br>[<a href="./data/Images.zip" download>DOWNLOAD IMAGES</a>] </center>
 
 ## Table of Contents
 - [Instruction for the Dataset](#instruction-for-the-dataset)
