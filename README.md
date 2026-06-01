@@ -10,19 +10,23 @@
 <center> [<a href="./report.pdf" download>DOWNLOAD REPORT</a>]<br>[<a href="./data/absorptionData_HybridGAN.csv" download>DOWNLOAD ABSORPTION DATA</a>]<br>[<a href="./data/Images.zip" download>DOWNLOAD IMAGES</a>] </center>
 
 ## Table of Contents
-- [Instruction for the Dataset](#instruction-for-the-dataset)
-  - [Enviroment Setup](#enviroment-setup)
-  - [Model Architecture](#model-architecture)
-    - [Forward Predictor](#forward-predictor)
-    - [Design Decoder](#design-decoder)
-    - [Spectrum Encoder](#spectrum-encoder)
-    - [Latent Diffusion Denoiser](#latent-diffusion-denoiser)
-  - [Results and Discussion](#results-and-discussion)
-    - [Forward Predictor](#forward-predictor-1)
-    - [Design Decoder](#design-decoder-1)
-    - [Latent Diffusion Denoiser](#latent-diffusion-denoiser-1)
-  - [Ablation Studies and Training Times](#ablation-studies-and-training-times)
-  - [Conclusions and Future Work](#conclusions-and-future-work)
+- [Table of Contents](#table-of-contents)
+- [setting up the environment](#setting-up-the-environment)
+- [Dataset](#dataset)
+- [Related Work](#related-work)
+- [Enviroment Setup](#enviroment-setup)
+- [Model Architecture](#model-architecture)
+  - [Forward Predictor](#forward-predictor)
+  - [Design Decoder](#design-decoder)
+  - [Spectrum Encoder](#spectrum-encoder)
+  - [Latent Diffusion Denoiser](#latent-diffusion-denoiser)
+- [Results and Discussion](#results-and-discussion)
+  - [Forward Predictor](#forward-predictor-1)
+  - [Design Decoder](#design-decoder-1)
+  - [Latent Diffusion Denoiser](#latent-diffusion-denoiser-1)
+- [Ablation Studies and Training Times](#ablation-studies-and-training-times)
+- [Conclusions and Future Work](#conclusions-and-future-work)
+- [References](#references)
 
 ## setting up the environment 
 
@@ -37,7 +41,7 @@ Install the required dependencies
 pip install torch torchvision matplotlib numpy pandas imageio-ffmpeg
 ```
 
-# Instruction for the Dataset
+## Dataset
 
 Extract the dataset from `data/Images.zip` such that the images are located in `data/Images/`. The dataset should be organized as follows:
 ```
@@ -61,6 +65,16 @@ The dataset RGB encoding and sample images are given in the figure below.
 The objective is to design and train a Diffusion Model with a learned guidance module that generates a physically realizable metasurface design whose corresponding absorption spectrum closely matches the target spectrum. The task is summarized in the figure below. The architecture is explained in coming sections.
 
 ![image](./results/main_figures/task2.png)
+
+## Related Work
+
+Generative Adversarial Networks (GANs) were among the first classes of generative models to significantly advance inverse design applications through their capabilities in image synthesis, video analysis, and molecular design. In this work, the focus is placed on approaches that utilize image representations to encode material and structural parameters for metasurface design generation [11].
+
+However, well-known limitations of GANs, including mode collapse and unstable training dynamics, have motivated the development of alternative generative frameworks. One recent study employed a hybrid quantum-classical generative adversarial network (QGAN) to reduce both computational requirements and dataset size for metasurface inverse design [10]. While this approach addresses computational efficiency and data scarcity, it does not fully exploit the performance advantages demonstrated by state-of-the-art classical generative models. This observation serves as a primary motivation for the present work, leading us to investigate Denoising Diffusion Probabilistic Models (DDPMs), which have consistently been shown to outperform traditional GANs in generating diverse and high-quality outputs [8].
+
+Diffusion models have rapidly emerged as a dominant framework for inverse design problems over the past few years. Among the earliest efforts was the direct application of DDPMs to metasurface inverse design [13]. Subsequent studies incorporated physics-based guidance mechanisms, including RCWA-guided posterior sampling [3] and the injection of adjoint gradients into the diffusion sampling process [7]. More recently, MXDiffusion introduced Maxwell's equations directly into diffusion training through an intermediate electric-field representation, further strengthening the connection between the generative process and the underlying physics [5].
+
+These studies collectively demonstrate that incorporating physical knowledge into diffusion-based inverse design significantly improves performance. However, such improvements often come at the cost of increased computational complexity during both training and inference. Consequently, there remains a need for approaches that retain the benefits of physics-guided generation while reducing the associated computational overhead.
 
 ## Enviroment Setup
 
@@ -203,3 +217,19 @@ The proposed framework successfully trained both the Forward Predictor and Autoe
 The ablation study confirmed that the selected architectural components contribute positively to overall performance and are necessary for achieving optimal results.
 
 Future work will focus on incorporating noise-based augmentations during the training of both the Autoencoder and Forward Predictor to improve robustness. Additional modifications to the attention mechanism will also be investigated to further improve generation quality. Furthermore, approximately 500 out-of-distribution (OOD) samples are currently being collected and will be used to rigorously evaluate and validate the proposed architecture before conducting final large-scale experiments.
+
+## References
+
+[1] Zahraa J. Abdulkareem, Tagreed K. Hamad, and Taha Ahmed A. Elwi. Recon- figurable metasurface based on graphene optical antennas for dynamic beam steering. Sustainable Engineering and Innovation, 7(1):127–136, Mar 2025.
+[2] Ahmet Onur Dasdemir, Victor Minden, and Emir Salih Magden. Computational scaling in inverse photonic design through factorization caching. Applied Physics Letters, 123(22):221106, 11 2023.
+[3] Liav Hen, Erez Yosef, Dan Raviv, Raja Giryes, and Jacob Scheuer. Inverse design of diffractive metasurfaces using diffusion models. ACS Photonics, 13(1):38–46, 2026.
+[4] Dianjing Liu, Yixuan Tan, Erfan Khoram, and Zongfu Yu. Training deep neural networks for the inverse design of nanophotonic structures. ACS Photonics, 5(4):1365–1369, 4 2018.
+[5] Sujoy Mondal, Taehyuk Park, Sudipta Biswas, Alan X. Wang, and Wenshan Cai. Mxdiffusion: A physics-aware maxwell’s law-guided diffusion model strategy for inverse photonic metasurface design. Nano Letters, 26(14):4897–4905, 2026. PMID: 41937751.
+[6] Benjamin Sanchez-Lengeling and Alán Aspuru-Guzik. Inverse molecular design using machine learning: Generative models for matter engineering. Science, 361(6400):360–365, 2018.
+[7] Dongjin Seo, Soobin Um, Sangbin Lee, Jong Chul Ye, and Haejun Chung. Physics- guided and fabrication-aware inverse design of photonic devices using diffusion models. ACS Photonics, 13(2):363–372, 2026.
+[8] Zhuoyi Shen, Maoyu Mao, and Pengfei Fan. A primary comparison of diffusion models and generative adversarial networks for image synthesis. In Proceedings of the 2024 7th International Conference on Machine Learning and Machine Intelligence (MLMI), MLMI ’24, page 225–234, New York, NY, USA, 2024. Association for Computing Machinery.
+[9] Sunae So, Jungho Mun, and Junsuk Rho. Deep learning enabled inverse design in nanophotonics. Nanophotonics, 9(5):1041–1057, 2020.
+[10] Sreeraj Rjan Warrier and Jayasri Dontabhaktuni. Hybrid quantum-classical inverse design of metasurfaces for tailored high q-factor response. Applied Physics A, 132(4):331, 4 2026.
+[11] Christopher Yeung, Ryan Tsai, Benjamin Pham, Brian King, Yoshiaki Kawagoe, David Ho, Julia Liang, Mark W. Knight, and Aaswath P. Raman. Global inverse design across multiple photonic structure classes using generative deep learning. Advanced Optical Materials, 9(20):2100548, 2021.
+[12] Nanfang Yu and Federico Capasso. Flat optics with designer metasurfaces. Nature Materials, 13(2):139–150, 2014.
+[13] Zezhou Zhang, Chuanchuan Yang, Yifeng Qin, Zhihai Zheng, Jiqiang Feng, and Hongbin Li. Addressing high-performance data sparsity in metasurface inverse design using multi-objective optimization and diffusion probabilistic models. Opt. Express, 32(23):40869–40885, Nov 2024. 5
